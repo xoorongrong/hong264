@@ -1,0 +1,11 @@
+# 编译
++ ./configure --prefix=/usr/local/x264 --enable-static --enable-shared
++ make -j8
++ sudo make install
+
++ ~/.basrc
+++ export X264_HOME=/usr/local/x264
+++ export PATH=$PATH:$X264_HOME/bin
+++ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$X264_HOME/bin
+
+https://www.cnblogs.com/wainiwann/p/5647549.html
